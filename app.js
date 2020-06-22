@@ -1,10 +1,6 @@
-# Tomogatchi-Project
-Tomogatchi Project #0
-
+console.log ('Hi im Silent Bob')
 
 // ==User Stories/ game logic ==//
-
-
 //The goal of the game is to keep the pet alive by feeding it when it is hungry, healing it when it is sick, when to sleep, and not to die
 
 
@@ -102,3 +98,9 @@ Tomogatchi Project #0
                 // show "tick" icon
             // else then
                 // show "X" icon
+
+
+
+
+
+    
