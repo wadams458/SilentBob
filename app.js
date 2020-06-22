@@ -6,21 +6,23 @@ console.log ('Hi im Silent Bob')
 
 // -------missing details----------//
     // name- Silent Bob
-    // Health
-    // Happiness
-    // Sleepy
+    // Hunger (1-10)
+    // Sleepiness (1-10)
+    // Boredom(1-10)
+    // Age (1)
 
 //---------Buttons---------
-    // "A" Button
-    // "B" Button
+    // "A" Button (plays with your pet)
+    // "B" Button (Feed your pet)
+    // "C" Button (turn off the lights)
 
 // --------Variables needed-----------
     
     // mood- stores a value that will determine the mood (happy, sleepy, hungry)
     // Happy- a boolean variable that will show a happy face when its TRUE
-    // Hungry- a boolean variable that will show a sad face when its TRUE, meaning the pet is hungry
-    // sleepy- a boolean variable that will show a sad face when its TRUE, meaning the pet is sleepy
-    // dead- a boolean variable that will show a lifeless face when its TRUE, meaning the pet is dead
+    // Hunger- a boolean variable that will show a sad face when its TRUE, meaning the pet is hungry
+    // sleepiness- a boolean variable that will show a sad face when its TRUE, meaning the pet is sleepy
+    // Boredom- a boolean variable that will show a lifeless face when its TRUE, meaning the pet is bored
     // Un-happy timer- stores a value that will be used to count down from when the pet is not happy. 
             // cont... The pet will die when the timer reaches zero.
 
