@@ -82,7 +82,7 @@ Sleepiness
 
 
          on "play" button pressed
-            if "sleepy" is = true, then
+            if "sleepiness" is = true, then
                  set "boredom" to true
                  set "hunger" to false
                  set "sleepiness" to false

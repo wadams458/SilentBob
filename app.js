@@ -23,8 +23,10 @@ function handleStartGame() {
   console.log("Start Game clicked...!");
 
   // Start Timer
-  startTimer();
+  startTimer(3);
 }
+
+// "Begin" Timer
 
 function startTimer() {
   const Timer = setInterval(function () {
@@ -37,3 +39,17 @@ function startTimer() {
     }
   }, 1000);
 }
+
+// Eat Timer
+
+// function startTimer() {
+//   const eat = setInterval(function () {
+//     if (time > 0) {
+//       time--;
+//       console.log(eat);
+//     } else {
+//       console.log("Time is up");
+//       clearInterval(Timer);
+//     }
+//   }, 1000);
+// }
