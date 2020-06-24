@@ -7,6 +7,19 @@ body {
   background-color: turquoise;
 }
 
+/* ------Egg------- */
+/* https://css-tricks.com/the-shapes-of-css/#egg-shape  */
+ .egg {
+      display: block;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+ }
+
+/* Egg End */
+
+
 .hunger {
   width: 10px;
   padding: 2px;
