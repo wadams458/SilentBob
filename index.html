@@ -3,18 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer src="scripts/app.js/"></script>
-        
+        <script defer src="app.js"></script>
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+            integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
         <!--Main CSS-->
+
+
         <link rel="stylesheet" href="main.css">
         <title>Tamagotchi Project</title>
     </head>
     <body>
         <main>
-            
-     <h1>Silent Bob</h1>
+
+        <!------ Timer ------->
+
+            <h1>Day: 0</h1>
+    <header>
+         <span id="timer">Timer: 0s</span>
+        <span id="round">Round: 1</span>
+        <button>Begin</button>
+    </header>
+
+    <section></section>
 
     <!-----------Egg Starts------------>
+
         <div class ="Egg"></div>
 
 
@@ -39,7 +53,8 @@
                 <h3>HUNGER</h3>
                 <!-- Description -->
             <section class="hunger-description">
-                <!-- bones -->
+
+                 <!-------- bone icon ----->
                 <ul>
                     <li><i class="fas fa-bone"></i></li>
                     <li><i class="fas fa-bone"></i></li>
@@ -63,7 +78,7 @@
                     <h3>BOREDOM</h3>
                     <div class="boredomBar">
 
-                 <!-- hourglass -->
+            <!----- hourglass icon ---->
 
                     <ul>
                         <li><i class="fas fa-hourglass-half"></i></li>
@@ -85,11 +100,11 @@
 
     <!-------------Sleepiness Starts--------------->
 
-                <div class="sleepiness"
+                <div class="sleepiness">
                     <h4>SLEEPINESS</h4>
                     <div class="sleepinessBar">
 
-            <!--------bed-------->
+                <!-----bed icon------>
                     <ul>
                         <li><i class="fas fa-bed"></i></li>
                         <li><i class="fas fa-bed"></i></li>
@@ -113,9 +128,9 @@
                 <selection class=" tomo-actions">
                     
                     
-                    <button><i>eat</i></button>
-                    <button><i>play</i></button>
-                    <button><i>nap</i></button>
+                    <button><i>EAT</i></button> 
+                    <button><i>PLAY</i></button>
+                    <button><i>NAP</i></button>
                     <!-- <button id="eat">EAT</button> -->
                     <!-- <button id="play">PLAY</button> -->
                     <!-- <button id="nap">NAP</button> -->
@@ -137,7 +152,7 @@
             </section>
 
 
-      <!---------------Button--------------->
+      <!-----------Button------------>
             <section class="buttons">
                 <button id="start">Start</button>
         

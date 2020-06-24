@@ -29,7 +29,7 @@ Sleepiness
 - Hunger- a boolean variable that will show a sad face when its TRUE, meaning the pet is hungry
 - sleepiness- a boolean variable that will show a sad face when its TRUE, meaning the pet is sleepy
 - dead- a boolean variable that will show a lifeless face when its TRUE, meaning the pet is dead
-- Un-happy timer- stores a value that will be used to count down from when the pet is not happy.
+- timer- stores a value that will be used to count down from when the pet is not happy.
 - cont... The pet will die when the timer reaches zero.
 
   // ----------Mood Changes--------------------
@@ -55,12 +55,12 @@ Sleepiness
 
   ***
 
-        if ("hunger" is equal to true or "sleepiness" is = to true) and "unhappy timer" is = to 0, then:
+        if ("hunger" is equal to true or "sleepiness" is = to true) and "timer" is = to 0, then:
              set dead to true
 
          if "hunger is equal to true or "sleepiness" is equal to true, then
              show sad face
-             change "unhappy timer" by -1
+             change "timer" by -1
 
          if "dead" is true, then:
              show dead face
@@ -78,16 +78,12 @@ Sleepiness
                  set "boredom" to true
                  set "hunger" to false
                  set "sleepiness" to false
-                 set "unhappy timer" to 100
-            else then
-                 show "tick" icon
+                 set "timer" to 100
+
 
          on "play" button pressed
             if "sleepy" is = true, then
                  set "boredom" to true
                  set "hunger" to false
                  set "sleepiness" to false
-                 set "unhappy timer" to 100
-                 show "tick" icon
-              else then
-                show "X" icon
+                 set "timer" to 100
