@@ -1,4 +1,27 @@
-/* Id's & Classes */
 body {
-  background-color: lightblue;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
 }
+
+.hunger {
+  width: 10px;
+  padding: 2px;
+  margin: 2px;
+
+
+.boredom {
+  width: 10px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.sleepiness {
+  width: 10px;
+  padding: 2px;
+  margin: 2px;
+}
+
