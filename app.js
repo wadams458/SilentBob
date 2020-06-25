@@ -33,11 +33,21 @@ function startTimer() {
     if (time > 0) {
       time--;
       console.log(time);
+      updateTime();
     } else {
       console.log("Time is up");
       clearInterval(Timer);
     }
   }, 1000);
+}
+
+function updateTime() {
+  // select the time element
+  // on each interval, update the time element with new time value
+  //const timer = document.getElementById("timer");
+  document.getElementById("timer").innerText = time;
+
+  //timer.innerText = time;
 }
 
 // Eat Timer
