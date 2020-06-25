@@ -1,5 +1,19 @@
 console.log("Hi im Silent Bob");
 
+class Pet {
+  constructor(name = "Pet") {
+    this.name = name;
+    this.hunger = 0;
+    this.hungerWidth = 0;
+    this.sleep = 0;
+    this.sleepWidth = 0;
+    this.boredom = 0;
+    this.boredomWidth = 0;
+    this.time = 60;
+    this.age = 1;
+  }
+}
+
 //------- Timer ------- //
 
 // Select Button
@@ -11,19 +25,18 @@ const bed = document.querySelector(".bed");
 const hourglass = document.querySelector(".hourglass");
 const bone = document.querySelector(".bone");
 //const bone = 10;
-let time = 3;
+let time = 10;
 let score = 0;
 
 //---------- Cached DOM Elements
 
-const startButton = document.getElementById("startGame");
 // const boneContainer = document.querySelector(.bone);
 // const hourGlassContainer = document.querySelector(.hourGlass);
 // const bedContainer = document.querySelector(.bed);
 
 //------------Event Listeners
 
-startButton.addEventListener("click", handleStartGame);
+// startButton.addEventListener("click", handleStartGame);
 
 //Event Delegation
 //Event listeners are registered when the DOM Loads
@@ -72,10 +85,9 @@ function handleBoneClick(event) {
   console.log(event.target.classList.contains("bone"));
   {
     //const bone = event.target.style.button;
-
     //if (event.target.classList.contains("bone")) {
     //boneContainer.removeChild(event.target);
-    checkScore(play);
+    //checkScore(play);
   }
 }
 
@@ -89,54 +101,64 @@ function handleHourglassClick(event) {
   //if (event.target.classList.contains("hourGlass")) {
 }
 
-function checkScore(play) {
-  //if play = boredom; score + 1
-  //else score = score - 1
+// function checkScore(play) {
+//   //if play = boredom; score + 1
+//   //else score = score - 1
 
-  if (play === "boredom") {
-    //score = score -1
-    score++;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  } else {
-    //score = score -1
-    score--;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  }
-}
+//   if (play === "boredom") {
+//     //score = score -1
+//     score++;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   } else {
+//     //score = score -1
+//     score--;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   }
+// }
 
-function checkScore(Eat) {
-  //if play = boredom; score + 1
-  //else score = score - 1
+//-----MVP FUNCTIN CODE-------->
+// one function to do all 3. make dry
+//string Checkscore eat,
 
-  if (Eat === "sleepiness") {
-    //score = score -1
-    score++;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  } else {
-    //score = score -1
-    score--;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  }
-}
+//Write  new code here
 
-function checkScore(Nap) {
-  //if play = boredom; score + 1
-  //else score = score - 1
+//---------BROKEN CODE MAYBE------------------------>
 
-  if ("sleepiness" === "boredom") {
-    //score = score -1
-    score++;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  } else {
-    //score = score -1
-    score--;
-    //document.querySelector.('h1').innerText = `Day: $(score)`;
-  }
-}
+// function checkScore(Eat), Nap, Play) {
+//   //if play = boredom; score + 1
+//   //else score = score - 1
+
+//   if (Eat === "sleepiness") {
+//     //score = score -1
+//     score++;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   } else {
+//     //score = score -1
+//     score--;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   }
+// }
+
+// function checkScore(Nap) {
+//   //if play = boredom; score + 1
+//   //else score = score - 1
+
+//   if ("sleepiness" === "boredom") {
+//     //score = score -1
+//     score++;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   } else {
+//     //score = score -1
+//     score--;
+//     //document.querySelector.('h1').innerText = `Day: $(score)`;
+//   }
+// }
 
 // Add a class to the new div
 //bone. className = 'bone';
 //Add classes to class list
+
+//----------END BROKEN CODE--------------------------->
 
 bone.classList.add("bone");
 hourglass.classList.add("hourglass");
@@ -155,3 +177,28 @@ bed.classList.add("bed");
 //     }
 //   }, 1000);
 // }
+
+//Buttons
+
+const startButton = document.getElementById("startGame");
+const eatButton = document.getElementById("eat");
+const playButton = document.getElementById("play");
+const napButton = document.getElementById("nap");
+
+// document.getElementById("eat") = eat;
+// document.getElementById("play") = play;
+// document.getElementById("nap") = nap;
+
+startButton.addEventListener("click", handleStartGame);
+eatButton.addEventListener("click", handleEat);
+playButton.addEventListener("click", handlePlay);
+napButton.addEventListener("click", handleNap);
+
+// const playButton = $("#play");
+// const eatButton = $("#eat");
+// const napButton = $("#nap");
+
+//User actions
+// $(playButton).on("click", play);
+// $(feedButton).on("click", eat);
+// $(napButton).on("click", nap);

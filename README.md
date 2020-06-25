@@ -61,25 +61,30 @@ Sleepiness
          if "hunger is equal to true or "sleepiness" is equal to true,
              change "timer" by -1
 
+//------- Feeding and putting to sleep------------------
+
+         This section is for the player to be able to press either "EAT" button, "PLAY" button, "NAP" button
+                to make pet happy.
 
 
-  //------- Feeding and putting to sleep------------------
-
-         This section is for the player to be able to press either "eat" button, "play" button, "nap" button
-            Cont. when the pet is hungry or tired to make the pet happy again before it dies.
 
 
         on "Eat" button pressed
              if "hunger" is = true, then
-                 set "boredom" to true
-                 set "hunger" to false
-                 set "sleepiness" to false
-                 set "timer" to 10
+                decrement "bone" count
+                reset timer to 10
+
 
 
          on "play" button pressed
             if "sleepiness" is = true, then
-                 set "boredom" to true
-                 set "hunger" to false
-                 set "sleepiness" to false
-                 set "timer" to 10
+                decrement "bed" count
+                reset timer to 10
+
+
+
+
+        on "NAP" button pressed
+            if "Nap" = true then
+            decrement "bed" count
+            reset timer to 10
