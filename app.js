@@ -48,26 +48,33 @@ function handleStartGame() {
 function handleEat() {
   if (hunger > 0) {
     hunger--;
+    document.getElementById("hunger").innerHTML = `<h3>Hunger ${hunger}</h3>`;
     console.log("hunger!", hunger);
   }
 }
 function handlePlay() {
   if (boredom > 0) {
     boredom--;
-    console.log("play!", play);
+    document.getElementById(
+      "boredom"
+    ).innerHTML = `<h3>BOREDOM ${boredom}</h3>`;
+    console.log("play", play);
   }
 }
 function handleNap() {
   if (sleep > 0) {
     sleep--;
-    console.log("Nap!!, nap");
+    document.getElementById(
+      "sleepiness"
+    ).innerHTML = `<h3>SLEEPINESS ${sleep}</h3>`;
+    console.log("Nap!!", nap);
   }
 }
 
 // "Begin" Timer
 
 function startTimer() {
-  const Timer = setInterval(function () {
+  const timer = setInterval(function () {
     time++;
     console.log(time);
     updateTime();
@@ -80,21 +87,32 @@ function startTimer() {
       increaseBoredom();
       console.log(hunger);
     }
+    if (hunger >= 10 || boredom >= 10 || sleep >= 10) {
+      clearInterval(timer);
+      console.log("creature died");
+    }
   }, 1000);
 }
 
 function increaseHunger() {
   hunger++;
-  console.log("hunger!", hunger);
+  document.getElementById("hunger").innerHTML = `<h3>Hunger ${hunger}</h3>`;
+
+  //console.log("hunger!", hunger);
 }
 
 function increaseSleep() {
   sleep++;
+  document.getElementById(
+    "sleepiness"
+  ).innerHTML = `<h3>SLEEPINESS ${sleepiness}</h3>`;
+
   console.log("sleep!", sleep);
 }
 
 function increaseBoredom() {
   boredom++;
+  document.getElementById("boredom").innerHTML = `<h3>BOREDOM ${boredom}</h3>`;
   console.log("Boredom!", boredom);
 }
 
@@ -109,25 +127,25 @@ function updateTime() {
 
 //Event  Delegation
 
-function handleBoneClick(event) {
-  console.log(event.target.classList.contains("bone"));
-  {
-    //const bone = event.target.style.button;
-    //if (event.target.classList.contains("bone")) {
-    //boneContainer.removeChild(event.target);
-    //checkScore(play);
-  }
-}
+// function handleBoneClick(event) {
+//   console.log(event.target.classList.contains("bone"));
+//   {
+//     //const bone = event.target.style.button;
+//     //if (event.target.classList.contains("bone")) {
+//     //boneContainer.removeChild(event.target);
+//     //checkScore(play);
+//   }
+// }
 
-function handleBedClick(event) {
-  console.log("bed Clicked!");
-  //f (event.target.classList.contains("bed")) {
-}
+// function handleBedClick(event) {
+//   console.log("bed Clicked!");
+//   //f (event.target.classList.contains("bed")) {
+// }
 
-function handleHourglassClick(event) {
-  console.log("hourGlass Clicked!");
-  //if (event.target.classList.contains("hourGlass")) {
-}
+// function handleHourglassClick(event) {
+//   console.log("hourGlass Clicked!");
+//   //if (event.target.classList.contains("hourGlass")) {
+// }
 
 // function checkScore(play) {
 //   //if play = boredom; score + 1
