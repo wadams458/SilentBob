@@ -1,20 +1,8 @@
 console.log("Hi im Silent Bob");
 
-class Pet {
-  constructor(name = "Pet") {
-    this.name = name;
-    this.hunger = 0;
-    this.hungerWidth = 0;
-    this.sleep = 0;
-    this.sleepWidth = 0;
-    this.boredom = 0;
-    this.boredomWidth = 0;
-    this.time = 60;
-    this.age = 1;
-  }
-}
-
-//------- Timer ------- //
+let hunger = 0;
+let sleep = 0;
+let boredom = 0;
 
 // Select Button
 // Save Button in Variable
@@ -25,7 +13,7 @@ const bed = document.querySelector(".bed");
 const hourglass = document.querySelector(".hourglass");
 const bone = document.querySelector(".bone");
 //const bone = 10;
-let time = 10;
+let time = 0;
 let score = 0;
 
 //---------- Cached DOM Elements
@@ -51,23 +39,39 @@ hourglass.addEventListener("click", handleHourglassClick);
 function handleStartGame() {
   console.log("Start Game clicked...!");
 
+  //------- Timer ------- //
+
   // Start Timer
-  startTimer(3);
+  startTimer(0);
 }
 
 // "Begin" Timer
 
 function startTimer() {
   const Timer = setInterval(function () {
-    if (time > 0) {
-      time--;
-      console.log(time);
-      updateTime();
-    } else {
-      console.log("Time is up");
-      clearInterval(Timer);
-    }
+    time++;
+    console.log(time);
+    updateTime();
+    increaseHunger();
+    increaseSleep();
+    increaseBoredom();
+    //if % 2
   }, 1000);
+}
+
+function increaseHunger() {
+  hunger++;
+  console.log("hunger!", hunger);
+}
+
+function increaseSleep() {
+  sleep++;
+  console.log("sleep!", sleep);
+}
+
+function increaseBoredom() {
+  boredom++;
+  console.log("Boredom!", boredom);
 }
 
 function updateTime() {
@@ -189,10 +193,12 @@ const napButton = document.getElementById("nap");
 // document.getElementById("play") = play;
 // document.getElementById("nap") = nap;
 
+// be connected to methods
+
 startButton.addEventListener("click", handleStartGame);
-eatButton.addEventListener("click", handleEat);
-playButton.addEventListener("click", handlePlay);
-napButton.addEventListener("click", handleNap);
+// eatButton.addEventListener("click", handleEat);
+// playButton.addEventListener("click", handlePlay);
+// napButton.addEventListener("click", handleNap);
 
 // const playButton = $("#play");
 // const eatButton = $("#eat");
@@ -202,3 +208,15 @@ napButton.addEventListener("click", handleNap);
 // $(playButton).on("click", play);
 // $(feedButton).on("click", eat);
 // $(napButton).on("click", nap);
+
+// Status Update Function
+
+//----Increment
+let a = 1;
+a++;
+++a;
+
+//-----Decrement
+let b = 1;
+b--;
+--b;

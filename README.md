@@ -23,68 +23,37 @@ Sleepiness
 
 // --------Variables needed-----------
 
--mood- stores a value that will determine the mood boredom, sleepiness, hunger)
-
-- boredom- a boolean variable that will show a happy face when its TRUE
-- Hunger- a boolean variable that will show a sad face when its TRUE, meaning the pet is hungry
-- sleepiness- a boolean variable that will show a sad face when its TRUE, meaning the pet is sleepy
-- dead- a boolean variable that will show a lifeless face when its TRUE, meaning the pet is dead
-- timer- stores a value that will be used to count down from when the pet is not happy.
-- cont... The pet will die when the timer reaches zero.
-
-  // ----------Mood Changes--------------------
-
-  When the pets mood changes when it is Boredom, hungry, sleepy
-
-  If "Boredom" is true, then set "Mood" to a random value between 0 and 5000
-
-  if "Mood " is <=1 (less than or equal to 1) then:
-  set "boredom" to false
-  set "hunger" to true
-  set "sleepiness" to false
-
-         else if "mood" is >=1 (greater than or equal to 1) and <=3 then
-            set "boredom" to false
-            set "hunger" to false
-             set "sleepiness" to true
-
-         else then
-             set "boredom" to true
-            set "hunger" to false
-             set "sleepiness" to false
-
-  ***
-
-        if ("hunger" is equal to true or "sleepiness" is = to true) and "timer" is = to 0, then:
-             set dead to true
-
-         if "hunger is equal to true or "sleepiness" is equal to true,
-             change "timer" by -1
+// ----------Mood Changes--------------------
 
 //------- Feeding and putting to sleep------------------
 
-         This section is for the player to be able to press either "EAT" button, "PLAY" button, "NAP" button
+         This section is for the player to be able to press either
+            "EAT" button, "PLAY" button, "NAP" button
                 to make pet happy.
 
 
 
 
-        on "Eat" button pressed
-             if "hunger" is = true, then
-                decrement "bone" count
-                reset timer to 10
+       on "EAT" button not pressed
+           then timer adds +1 every 3 seconds
+
+        on "EAT" button not pressed
+            then timer adds +1 every 3 seconds
 
 
 
-         on "play" button pressed
-            if "sleepiness" is = true, then
-                decrement "bed" count
-                reset timer to 10
+         on "PLAY" button not pressed
+           then timer adds +1 every 3 seconds
+
+        on "PLAY" button not pressed
+            then timer adds +1 every 3 seconds
 
 
+
+
+        on "NAP" button not pressed
+            then timer adds +1 every 3 seconds.
 
 
         on "NAP" button pressed
-            if "Nap" = true then
-            decrement "bed" count
-            reset timer to 10
+            then Nap Timer -1
