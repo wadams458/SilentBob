@@ -52,7 +52,7 @@ Sleepiness
 
 
         on "NAP" button not pressed
-            then timer adds +1 every 3 seconds.
+            then timer adds +1 every 2 seconds.
 
 
         on "NAP" button pressed

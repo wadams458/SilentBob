@@ -3,18 +3,18 @@ console.log("Hi im Silent Bob");
 let hunger = 0;
 let sleep = 0;
 let boredom = 0;
+let time = 0;
+let score = 0;
 
 // Select Button
 // Save Button in Variable
 // Add click event listener to button
 
 //--------App State
-const bed = document.querySelector(".bed");
-const hourglass = document.querySelector(".hourglass");
-const bone = document.querySelector(".bone");
+// const bed = document.querySelector(".bed");
+// const hourglass = document.querySelector(".hourglass");
+// const bone = document.querySelector(".bone");
 //const bone = 10;
-let time = 0;
-let score = 0;
 
 //---------- Cached DOM Elements
 
@@ -30,9 +30,9 @@ let score = 0;
 //Event listeners are registered when the DOM Loads
 // To fix this problem use event delegation (assigning listener to parent)
 
-bone.addEventListener("click", handleBoneClick);
-bed.addEventListener("click", handleBedClick);
-hourglass.addEventListener("click", handleHourglassClick);
+// bone.addEventListener("click", handleBoneClick);
+// bed.addEventListener("click", handleBedClick);
+// hourglass.addEventListener("click", handleHourglassClick);
 
 //----------- Function Declarations
 
@@ -45,6 +45,25 @@ function handleStartGame() {
   startTimer(0);
 }
 
+function handleEat() {
+  if (hunger > 0) {
+    hunger--;
+    console.log("hunger!", hunger);
+  }
+}
+function handlePlay() {
+  if (boredom > 0) {
+    boredom--;
+    console.log("play!", play);
+  }
+}
+function handleNap() {
+  if (sleep > 0) {
+    sleep--;
+    console.log("Nap!!, nap");
+  }
+}
+
 // "Begin" Timer
 
 function startTimer() {
@@ -52,10 +71,15 @@ function startTimer() {
     time++;
     console.log(time);
     updateTime();
-    increaseHunger();
-    increaseSleep();
-    increaseBoredom();
-    //if % 2
+    // increaseHunger();
+    // increaseSleep();
+    // increaseBoredom();
+    if (time % 2 === 0) {
+      increaseHunger();
+      increaseSleep();
+      increaseBoredom();
+      console.log(hunger);
+    }
   }, 1000);
 }
 
@@ -164,9 +188,9 @@ function handleHourglassClick(event) {
 
 //----------END BROKEN CODE--------------------------->
 
-bone.classList.add("bone");
-hourglass.classList.add("hourglass");
-bed.classList.add("bed");
+// bone.classList.add("bone");
+// hourglass.classList.add("hourglass");
+// bed.classList.add("bed");
 
 // Eat Timer
 
@@ -196,9 +220,10 @@ const napButton = document.getElementById("nap");
 // be connected to methods
 
 startButton.addEventListener("click", handleStartGame);
-// eatButton.addEventListener("click", handleEat);
-// playButton.addEventListener("click", handlePlay);
-// napButton.addEventListener("click", handleNap);
+
+eatButton.addEventListener("click", handleEat);
+playButton.addEventListener("click", handlePlay);
+napButton.addEventListener("click", handleNap);
 
 // const playButton = $("#play");
 // const eatButton = $("#eat");
