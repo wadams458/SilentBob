@@ -58,16 +58,12 @@ Sleepiness
         if ("hunger" is equal to true or "sleepiness" is = to true) and "timer" is = to 0, then:
              set dead to true
 
-         if "hunger is equal to true or "sleepiness" is equal to true, then
-             show sad face
+         if "hunger is equal to true or "sleepiness" is equal to true,
              change "timer" by -1
 
-         if "dead" is true, then:
-             show dead face
-            game over
 
 
-    //------- Feeding and putting to sleep------------------
+  //------- Feeding and putting to sleep------------------
 
          This section is for the player to be able to press either "eat" button, "play" button, "nap" button
             Cont. when the pet is hungry or tired to make the pet happy again before it dies.
@@ -78,7 +74,7 @@ Sleepiness
                  set "boredom" to true
                  set "hunger" to false
                  set "sleepiness" to false
-                 set "timer" to 100
+                 set "timer" to 10
 
 
          on "play" button pressed
@@ -86,4 +82,4 @@ Sleepiness
                  set "boredom" to true
                  set "hunger" to false
                  set "sleepiness" to false
-                 set "timer" to 100
+                 set "timer" to 10

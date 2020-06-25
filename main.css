@@ -7,6 +7,25 @@ body {
   background-color: turquoise;
 }
 
+.hourglass ul {
+  list-style: none;
+  display: flex;
+  padding: 15px;
+}
+.bone {
+}
+
+.bone ul {
+  list-style: none;
+  display: flex;
+  margin: 0 0 15px;
+}
+
+.bed ul {
+  list-style: none;
+  display: flex;
+  margin: 0 0 15px;
+}
 /* ------Egg------- */
 /* https://css-tricks.com/the-shapes-of-css/#egg-shape 
  .egg {
