@@ -5,6 +5,7 @@ let sleep = 0;
 let boredom = 0;
 let time = 0;
 let score = 0;
+let death = 0;
 
 // Select Button
 // Save Button in Variable
@@ -89,7 +90,7 @@ function startTimer() {
     }
     if (hunger >= 10 || boredom >= 10 || sleep >= 10) {
       clearInterval(timer);
-      console.log("creature died");
+      document.getElementById("creature died");
     }
   }, 1000);
 }
@@ -105,7 +106,7 @@ function increaseSleep() {
   sleep++;
   document.getElementById(
     "sleepiness"
-  ).innerHTML = `<h3>SLEEPINESS ${sleepiness}</h3>`;
+  ).innerHTML = `<h3>SLEEPINESS ${sleep}</h3>`;
 
   console.log("sleep!", sleep);
 }
