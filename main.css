@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   
+  
 }
 
 /* Header */
@@ -26,11 +27,11 @@ header {
 }
 
 .timer {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
-  top: 150px;
   
   
 }
@@ -131,7 +132,7 @@ header {
 
 
 #round{
-/*   font-weight: bold; */
+  /* font-weight: bold; */
 }
 
 .bob {
