@@ -1,189 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer src="app.js"></script>
-        <!-- Font-Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-            integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-        
-            <!--Main CSS-->
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="app.js"></script>
+    <!-- Font-Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
-        <link rel="stylesheet" href="main.css">
-        <title>Tamagotchi Project</title>
-    </head>
-    <body>
-        <main>
+    <!--Main CSS-->
+
+    <link rel="stylesheet" href="main.css">
+    <title>Tamagotchi Project</title>
+</head>
+
+<body>
+    <main>
 
         <!------ Timer ------->
 
-            <h1>Age: 1</h1>
-    <header>
-        Timer: <span id="timer"> 3s</span>
-        <span id="round">Age: 1</span>
-        <button id="startGame">Begin</button>
-    </header>
+        <!--     <h1>Age: 1</h1> -->
+        <header>
+            Timer:<span id="timer"> 0</span>
+            <span id="round">Age: 1</span>
+            <button id="startGame">Begin</button>
+        </header>
 
-    <section></section>
-
-
-
+        <section></section>
 
         <!-- Screen -->
-          <section class="screen">
+        <section class="screen">
 
-              <section class="Stats">
-                  <div ="name">
-                      <h2>Silent Bob, Age 1</h2>
-                    </div> 
-
-
-                    
-                    
-                </div>
-            </div>
-            
-     <!------------Hunger Starts----------------->
-
-            <div id="hunger">
-                <h3>HUNGER</h3></div>
-                <!-- Description -->
-            <section class="hunger-description">
-
-                 <!-------- bone icon ----->
-
-                 <!-- <section class="bone">
-                <ul
-                    style="list-style: none;"
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>
-                    <li><i class="fas fa-bone"></i></li>    
-                </ul>
-               
-            </section> -->
-                
-     <!----------------Hunger Ends----------------->
-
-     <!---------------Boredom Starts---------------->
-
-                <div id="boredom">
-                    <h3>BOREDOM</h3></div>
-                    <div class="boredomBar">
-
-            <!----- hourglass icon ---->
-
-                <!-- <section class="hourglass">
-                    <ul
-                        style="list-style: none;"
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                        <li><i class="fas fa-hourglass-half"></i></li>
-                    </ul>
-                </section>
-                     -->
+            <section class="Stats">
+                <div="name">
+                    <!--           <h2>Silent Bob, Age 1</h2> -->
                     </div>
-                </div>
-   <!----------------Boredom Ends-------------->
 
+                    </div>
+                    </div>
 
-    <!-------------Sleepiness Starts--------------->
+                    <!-- Main Container For All Pet Info -->
+                    <section id="js-pet-contain">
+                        <section id="js-pet-info">
+                            <h3>Silent Bob </h3>
+                            <p>Age:1 </p>
+                        </section>
 
-                <div id="sleepiness">
-                    <h4>SLEEPINESS</h4></div>
-                    
+                        <!------------Hunger Starts----------------->
 
-                <!-----bed icon------>
-                <!-- <section class="bed">
-                    <ul
-                        
-                        style="list-style: none;"
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                        <li><i class="fas fa-bed"></i></li>
-                    </ul>
-                        
+                        <div id="hunger">
+                            <h3>HUNGER</h3>
+                        </div>
+                        <!-- Description -->
+                        <section class="hunger-description">
 
-                    </section>  
-                         -->
-     <!-----------Sleepiness Ends------------------>
+                            <div id="boredom">
+                                <h3>BOREDOM</h3>
+                            </div>
+                            <div class="boredomBar">
 
- 
-                <!-- Actions -->
-                <selection class=" tomo-actions">
-                </selection>
+                            </div>
+                            </div>
+                            <!----------------Boredom Ends-------------->
 
-     <!---------Buttons------------->
-<!-- //<button id="startGame">Begin</button> -->
-<button id="eat">EAT</button>
-<button id ="play">PLAY</button>
-<button id ="nap">NAP</button>
+                            <!-------------Sleepiness Starts--------------->
 
-<!-- 
-     <section class="button-container">
-         <div class="nested-button-container">
-            <p><button type="button" id="play">Play!</button></p>
-            <p><button type="button" id="eat">Eat!</button></p>
-            <p><button type="button" id="nap">Nap!</button></p>
-         </div>
-     </section> -->
-                    
-                    
-                    <!-- <button><i>EAT</i></button> 
-                    <button><i>PLAY</i></button>
-                    <button><i>NAP</i></button> -->
-                    <!-- <button id="eat">EAT</button>  
-                    <button id="play">PLAY</button> 
-                    <button id="nap">NAP</button>
-                     -->
-                
-                
-              
-                <!-- <section class="console"
-                <header class="info">
-                    <h2>Name: Silent Bob</h2>
-                    <h3>Age: 1</h3>
-                </header> -->
-<!--                 
-                <section class ="Stats"
-                
-                <ul id='hungerStat'>Hunger</ul>
-                <ul id='boredomStat'>Boredom</ul>
-                <ul id='sleepinessStat'>Sleepiness</ul>
-            </section> -->
+                            <div id="sleepiness">
+                                <h4>SLEEPINESS</h4>
+                            </div>
 
-<!-- 
-      <!-----------Button------------>
-            <!-- <section class="buttons">
-                <button id="start">Start</button> --> 
-        
-    </section>
-     
-    
-    
+                            <!-----------Sleepiness Ends------------------>
+
+                            <!-- Actions -->
+                            <selection class=" tomo-actions">
+                            </selection>
+
+                            <!---------Buttons------------->
+                            <!-- //<button id="startGame">Begin</button> -->
+                            <button id="eat">EAT</button>
+                            <button id="play">PLAY</button>
+                            <button id="nap">NAP</button>
+
+                        </section>
+
     </main>
-    
+
 </body>
+
 </html>

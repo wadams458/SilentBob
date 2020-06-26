@@ -1,62 +1,120 @@
 body {
-  font-family: sans-serif;
+  font-family:'Press Start 2P', cursive;
+  font-size: 30px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: turquoise;
+  background-image: url(https://www.ps4wallpapers.com/wp-content/uploads/2017/03/PS4Wallpapers.com_8bit-woods-1056x594.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.hourglass ul {
-  list-style: none;
+/* Header */
+/* header {
   display: flex;
-  padding: 15px;
-}
-.bone {
-}
+  width: 95vw;
+  top: 2.5vh;
+  left: 2.5vw;
+  justify content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+} */
 
-.bone ul {
-  list-style: none;
+.timer {
   display: flex;
-  margin: 0 0 15px;
-}
-
-.bed ul {
-  list-style: none;
-  display: flex;
-  margin: 0 0 15px;
-}
-/* ------Egg------- */
-/* https://css-tricks.com/the-shapes-of-css/#egg-shape 
- .egg {
-      display: block;
-      width: 126px;
-      height: 180px;
-      background-color: red;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
- } */
-
-/* Egg End */
-
-/* .hunger {
-  width: 10px;
-  padding: 2px;
-  margin: 2px;
-  text-align: right;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+ 
   
-
-.boredom {
-  width: 10px;
-  padding: 2px;
-  margin: 2px;
-  text-align: :right;
   
 }
 
-.sleepiness {
-  width: 10px;
-  padding: 2px;
-  margin: 2px; 
-  text-align: right;
+/* Pet */
+#js-pet-info{
+  text-align: center;
+  position: relative:
+  bottom: 200px;
+  
 }
- */
+  
+
+
+ #js-pet-info h3{
+    position: relative;
+    bottom: 200px;
+}
+   
+
+
+#js-pet-info p {
+  margin-top: 15px;
+  position: relative;
+  bottom: 180px;
+  font-size: 20px;
+}
+
+#js-pet-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 20px;
+  position: relative;
+  
+}
+
+#eat {
+  font-weight: bold;
+  position: relative;
+  right: 150px;
+}
+
+#hunger {
+  font-size: 12px;
+  position: relative;
+  right: 200px;
+  top:  75px;
+}
+
+#play {
+  font-weight: bold;
+  position: relative;
+  right: 0px;
+}
+
+#boredom {
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  top: 32px;
+}
+
+#nap {
+  font-weight: bold;
+  position: relative;
+  left: 150px;
+}
+
+#sleepiness {
+  font-size: 12px;
+  position: relative;
+  left: 225px;
+  top: 3px;
+}
+
+#startGame {
+  font-weight: bold;
+}
+
+
+
+
+#round{
+/*   font-weight: bold; */
+}
+

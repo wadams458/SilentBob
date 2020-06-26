@@ -49,7 +49,7 @@ function handleStartGame() {
 function handleEat() {
   if (hunger > 0) {
     hunger--;
-    document.getElementById("hunger").innerHTML = `<h3>Hunger ${hunger}</h3>`;
+    document.getElementById("hunger").innerHTML = `<h3>HUNGER ${hunger}</h3>`;
     console.log("hunger!", hunger);
   }
 }
@@ -82,7 +82,7 @@ function startTimer() {
     // increaseHunger();
     // increaseSleep();
     // increaseBoredom();
-    if (time % 2 === 0) {
+    if (time % 3 === 0) {
       increaseHunger();
       increaseSleep();
       increaseBoredom();
@@ -90,7 +90,8 @@ function startTimer() {
     }
     if (hunger >= 10 || boredom >= 10 || sleep >= 10) {
       clearInterval(timer);
-      document.getElementById("creature died");
+      //fix this
+      console.log("creature died");
     }
   }, 1000);
 }
