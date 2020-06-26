@@ -8,9 +8,15 @@ SILENT BOB!
 
 The goal of the game is to keep the pet alive by feeding it when it is hungry, play when bored, sleep when tired.
 
+The number value of Hunger, Boredom, and sleepiness will increase 1 point every 2 seconds!
+
+If any of the Hunger, Boredom, or Sleepiness levels reach 10, then the game is over!
+
 // -------missing details----------//
 
-name- Silent Bob
+Name- Silent Bob
+
+Properties:
 Hunger
 Boredom
 Sleepiness
@@ -21,10 +27,6 @@ Sleepiness
 "Play" Button
 "Nap" Button
 
-// --------Variables needed-----------
-
-// ----------Mood Changes--------------------
-
 //------- Feeding and putting to sleep------------------
 
          This section is for the player to be able to press either
@@ -33,22 +35,20 @@ Sleepiness
 
 
 
-
-       on "EAT" button not pressed
-           then timer adds +1 every 3 seconds
-
         on "EAT" button not pressed
-            then timer adds +1 every 3 seconds
+            then timer adds +1 every 2 seconds.
 
 
+        on "EAT" button pressed
+            then EAT Timer -1
 
-         on "PLAY" button not pressed
-           then timer adds +1 every 3 seconds
 
         on "PLAY" button not pressed
-            then timer adds +1 every 3 seconds
+            then timer adds +1 every 2 seconds.
 
 
+        on "PLAY" button pressed
+            then PLAY Timer -1
 
 
         on "NAP" button not pressed
@@ -61,3 +61,7 @@ Sleepiness
 // External links used
 
 font: https://fonts.google.com/specimen/Press+Start+2P?query=8+&sidebar.open&selection.family=Press+Start+2P#standard-styles
+
+8-bit background: https://www.ps4wallpapers.com/wp-content/uploads/2017/03/PS4Wallpapers.com_8bit-woods-1056x594.png
+
+Silent BOB Image: "https://encrypted-tbn0.gstatic.com/imagesq=tbn%3AANd9GcTpp__ruDD_9jsWvNG9hyu_MyPGIQ32XXBXeA&usqp=CAU
