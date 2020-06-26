@@ -57,3 +57,7 @@ Sleepiness
 
         on "NAP" button pressed
             then Nap Timer -1
+
+// External links used
+
+font: https://fonts.google.com/specimen/Press+Start+2P?query=8+&sidebar.open&selection.family=Press+Start+2P#standard-styles

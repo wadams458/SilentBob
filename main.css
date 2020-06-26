@@ -71,45 +71,56 @@ header {
 }
 
 #eat {
+  font-size: 20px;
+  width: 150px;
   font-weight: bold;
   position: relative;
   right: 150px;
 }
 
 #hunger {
-  font-size: 12px;
+  font-size: 18px;
   position: relative;
-  right: 200px;
-  top:  75px;
+  right: 320px;
+  top:  100px;
 }
 
 #play {
+   font-size: 20px;
+   width: 150px;
   font-weight: bold;
   position: relative;
   right: 0px;
 }
 
 #boredom {
-  font-size: 12px;
+  font-size: 18px;
   position: relative;
-  left: 10px;
+  left: 180px;
   top: 32px;
 }
 
 #nap {
+  font-size: 20px;
+  width: 150px;
   font-weight: bold;
   position: relative;
-  left: 150px;
+  left: 170px;
 }
 
 #sleepiness {
-  font-size: 12px;
+  font-size: 18px;
   position: relative;
-  left: 225px;
-  top: 3px;
+  left: 500px;
+  top: -10px;
 }
 
 #startGame {
+  Position: relative;
+  width: 180px;
+  top: 200px;
+  left: 110px;
+  font-size: 20px;
   font-weight: bold;
 }
 
