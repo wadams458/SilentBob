@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 }
 
 /* Header */
@@ -29,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
- 
+  top: 150px;
   
   
 }
@@ -47,6 +48,7 @@ header {
  #js-pet-info h3{
     position: relative;
     bottom: 350px;
+
 }
    
 
@@ -122,6 +124,7 @@ header {
   left: 110px;
   font-size: 20px;
   font-weight: bold;
+  
 }
 
 
@@ -130,4 +133,17 @@ header {
 #round{
 /*   font-weight: bold; */
 }
+
+.bob {
+  position: relative;
+  top: 600px;
+  left: 120px;
+  
+  
+
+}
+  
+  
+
+
 
