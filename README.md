@@ -58,6 +58,10 @@ Sleepiness
         on "NAP" button pressed
             then Nap Timer -1
 
+// UNSOLVED PROBLEMS
+-CSS positioning of timer
+-GAME OVER does not display when property timers reach 10 - Silent Bob does not animate.
+
 // External links used
 
 font: https://fonts.google.com/specimen/Press+Start+2P?query=8+&sidebar.open&selection.family=Press+Start+2P#standard-styles
