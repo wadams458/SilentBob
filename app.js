@@ -120,10 +120,6 @@ const eatButton = document.getElementById("eat");
 const playButton = document.getElementById("play");
 const napButton = document.getElementById("nap");
 
-// document.getElementById("eat") = eat;
-// document.getElementById("play") = play;
-// document.getElementById("nap") = nap;
-
 // be connected to methods
 
 startButton.addEventListener("click", handleStartGame);
@@ -131,15 +127,6 @@ startButton.addEventListener("click", handleStartGame);
 eatButton.addEventListener("click", handleEat);
 playButton.addEventListener("click", handlePlay);
 napButton.addEventListener("click", handleNap);
-
-// const playButton = $("#play");
-// const eatButton = $("#eat");
-// const napButton = $("#nap");
-
-//User actions
-// $(playButton).on("click", play);
-// $(feedButton).on("click", eat);
-// $(napButton).on("click", nap);
 
 // Status Update Function
 
